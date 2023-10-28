@@ -106,5 +106,19 @@ bool class_1() {
 }
 
 
+bool map_1() {
+  // TODO: 创建一个空的 Map，然后按照以下要求进行操作
+  var your_answer; // 在这里编写代码
+
+  // 不许改这里 :)
+  const answer = {'name': 'John Doe', 'age': 30, 'city': 'New York'};
+  if (const MapEquality().equals(answer, your_answer)) {
+    return true;
+  } else {
+    print("你的答案 '$your_answer'  正确答案 '$answer'");
+    return false;
+  }
+}
+
 
 
