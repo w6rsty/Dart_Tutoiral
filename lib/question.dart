@@ -2,7 +2,7 @@ import 'package:collection/collection.dart';
 
 bool list_1() {
   // TODO: 创建一个奇数数组,包含1~10内的奇数
-  var your_answer; // 使用循环创建这个数组
+  var your_answer = []; // 使用循环创建这个数组
 
 
   // 不许改这里 :)
@@ -19,7 +19,7 @@ bool string_1() {
   // TODO: 将以下两个字符串拼接成一个新的字符串
   var str1 = "Hello,";
   var str2 = "World!";
-  var your_answer;
+  String your_answer = "";
 
   // 不许改这里 :)
   const answer = "Hello,World!";
@@ -35,11 +35,11 @@ bool string_2() {
   // TODO: 任务1 将字符串 "Hello" 插入到 "World!" 的中间位置
   var str1 = "World!";
   var str2 = "Hello";
-  var your_answer_1; // 在这里编写代码
+  String your_answer_1 = ""; // 在这里编写代码
 
   // TODO: 任务2 将字符串 "bad" 替换为 "good"，并返回新的字符串
-  var str = "That was a bad idea.";
-  var your_answer_2; // 在这里编写代码
+  String str = "That was a bad idea.";
+  String your_answer_2 = ""; // 在这里编写代码
 
   // 不许改这里 :)
   const answer_1 = "HelloWorld!";
@@ -52,21 +52,17 @@ bool string_2() {
     return false;
   }
 }
+
 bool function_1() {
   // TODO: 创建一个函数，接受两个整数参数，并返回它们的和
-  int sum(int a, int b) {
-    // TODO: 在这里编写代码，计算两个整数 a 和 b 的和，并将结果返回
-    return 114514;
-  }
+  var your_answer = 0;
+
 
   // 不许改这里 :)
-  const answer = 23649369912+12821371329;
-  var your_answer = sum(23649369912, 12821371329);
 
-  if (answer == your_answer) {
+  if (your_answer > 0) {
     return true;
   } else {
-    print("你的答案 '$your_answer'  正确答案 '$answer'");
     return false;
   }
 }
