@@ -2,11 +2,11 @@ import 'package:collection/collection.dart';
 
 bool list_1() {
   // TODO: 创建一个奇数数组,包含1~10内的奇数
-  var your_answer = []; // 使用循环创建这个数组
+  List<int> your_answer = []; // 使用循环创建这个数组
 
 
   // 不许改这里 :)
-  const answer = [1,3,5,7,9];
+  List<int> answer = [1,3,5,7,9];
   if (const ListEquality().equals(answer, your_answer)) {
     return true;
   } else {
@@ -75,10 +75,10 @@ bool function_1() {
 bool function_2() {
   // TODO: 创建一个函数，接受一个整数参数 n，并返回前 n 个斐波那契数列的列表
   // 请将函数命名为 'fibonacciList'
+  List<int> your_answer = [];
 
   // 不许改这里 :)
-  const answer = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34];
-  var your_answer; // = fibonacciLisr()
+  List<int> answer = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34];
 
   if (const ListEquality().equals(answer, your_answer)) {
     return true;
@@ -109,10 +109,10 @@ bool class_1() {
 
 bool map_1() {
   // TODO: 创建一个空的 Map，然后按照以下要求进行操作
-  var your_answer; // 在这里编写代码
+  List<String, dynamic> your_answer; // 在这里编写代码
 
   // 不许改这里 :)
-  const answer = {'name': 'John Doe', 'age': 30, 'city': 'New York'};
+  const List<String, dynamic> answer = {'name': 'John Doe', 'age': 30, 'city': 'New York'};
   if (const MapEquality().equals(answer, your_answer)) {
     return true;
   } else {
