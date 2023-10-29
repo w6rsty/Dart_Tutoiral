@@ -19,6 +19,7 @@ bool string_1() {
   // TODO: 将以下两个字符串拼接成一个新的字符串
   var str1 = "Hello,";
   var str2 = "World!";
+
   String your_answer = "";
 
   // 不许改这里 :)
@@ -33,11 +34,13 @@ bool string_1() {
 
 bool string_2() {
   // TODO: 任务1 将字符串 "Hello" 插入到 "World!" 的中间位置
-  var str1 = "World!";
-  var str2 = "Hello";
+  var str1 = "Hello";
+  var str2 = "World";
+  var str3 = "!";
   String your_answer_1 = ""; // 在这里编写代码
 
   // TODO: 任务2 将字符串 "bad" 替换为 "good"，并返回新的字符串
+  // 自行搜索替换方法
   String str = "That was a bad idea.";
   String your_answer_2 = ""; // 在这里编写代码
 
@@ -55,12 +58,14 @@ bool string_2() {
 
 bool function_1() {
   // TODO: 创建一个函数，接受两个整数参数，并返回它们的和
+  int a = 114514;
+  int b = 1919810;
+  // 把你的函数返回值赋值给your_answer
   var your_answer = 0;
-
 
   // 不许改这里 :)
 
-  if (your_answer > 0) {
+  if (your_answer == 114514 + 1919810) {
     return true;
   } else {
     return false;
