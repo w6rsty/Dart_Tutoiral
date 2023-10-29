@@ -23,32 +23,28 @@ class Task extends StatelessWidget {
         color: Colors.grey[400],
         borderRadius: BorderRadius.circular(10.0)
       ),
-      child: Padding(
-
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(question),
-            const Divider(),
-            Row(
-              children: [
-                const Spacer(),
-                ElevatedButton(
-                    onPressed: () => {
-                      if (task()) {
-                        // TODO 错误反馈
-                        print("\x1b[32;1m[Task $taskId] 正确\x1b[0m")
-                      } else {
-                        print("\x1b[31;1m[Task $taskId] 错误\x1b[0m")
-                      }
-                    },
-                    child: Text("Check Task $taskId")
-                ),
-              ],
-            )
-          ],
-        ),
-      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(question),
+          const Divider(),
+          Row(
+            children: [
+              const Spacer(),
+              ElevatedButton(
+                  onPressed: () => {
+                    if (task()) {
+                      print("\x1b[32;1m[Task $taskId] 正确\x1b[0m")
+                    } else {
+                      print("\x1b[31;1m[Task $taskId] 错误\x1b[0m")
+                    }
+                  },
+                  child: Text("Check Task $taskId")
+              ),
+            ],
+          )
+        ],
+      )
     );
   }
 }
